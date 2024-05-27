@@ -32,10 +32,10 @@ namespace WindowsFormsApp1 {
         {
             InitializeComponent();
             System.Diagnostics.Trace.WriteLine(fileNames.Length);
-            Closing += Form1_Closing;
+            Closing += FormClosing;
         }
 
-        private void Form1_Closing(object sender, CancelEventArgs e)
+        private void FormClosing(object sender, CancelEventArgs e)
         {
             Settings.Default.Save();
         }
@@ -49,8 +49,17 @@ namespace WindowsFormsApp1 {
             serviceName = textBoxServiceName.Text;
             serviceDisplayName = textBoxServiceDisplayName.Text;
             serviceDescription = textBoxServiceDescription.Text;
-
-            GenerateFiles();
+            try
+            {
+                GenerateFiles();
+                MessageBox.Show($"Project created at location {exportDirectory}", Text, MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error occurred during project creation. Please check if you have filled the values correctly. ", Text, MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
 
         void GenerateFiles()

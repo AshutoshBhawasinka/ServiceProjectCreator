@@ -40,12 +40,14 @@
             this.textBoxExecutableName = new System.Windows.Forms.TextBox();
             this.textBoxTargetDirectory = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 44);
+            this.label1.Location = new System.Drawing.Point(21, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 120);
+            this.label2.Location = new System.Drawing.Point(21, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 0;
@@ -63,7 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 148);
+            this.label3.Location = new System.Drawing.Point(21, 129);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 13);
             this.label3.TabIndex = 0;
@@ -72,7 +74,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 93);
+            this.label4.Location = new System.Drawing.Point(21, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 0;
@@ -81,7 +83,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 174);
+            this.label5.Location = new System.Drawing.Point(21, 155);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 13);
             this.label5.TabIndex = 0;
@@ -90,7 +92,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 70);
+            this.label6.Location = new System.Drawing.Point(21, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 13);
             this.label6.TabIndex = 0;
@@ -98,7 +100,7 @@
             // 
             // buttonGenerate
             // 
-            this.buttonGenerate.Location = new System.Drawing.Point(504, 219);
+            this.buttonGenerate.Location = new System.Drawing.Point(491, 252);
             this.buttonGenerate.Name = "buttonGenerate";
             this.buttonGenerate.Size = new System.Drawing.Size(137, 23);
             this.buttonGenerate.TabIndex = 7;
@@ -109,7 +111,7 @@
             // textBoxServiceDisplayName
             // 
             this.textBoxServiceDisplayName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServiceProjectCreator.Properties.Settings.Default, "ServiceDisplayName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxServiceDisplayName.Location = new System.Drawing.Point(157, 148);
+            this.textBoxServiceDisplayName.Location = new System.Drawing.Point(144, 129);
             this.textBoxServiceDisplayName.Name = "textBoxServiceDisplayName";
             this.textBoxServiceDisplayName.Size = new System.Drawing.Size(484, 20);
             this.textBoxServiceDisplayName.TabIndex = 5;
@@ -118,7 +120,7 @@
             // textBoxServiceName
             // 
             this.textBoxServiceName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServiceProjectCreator.Properties.Settings.Default, "ServiceName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxServiceName.Location = new System.Drawing.Point(157, 120);
+            this.textBoxServiceName.Location = new System.Drawing.Point(144, 101);
             this.textBoxServiceName.Name = "textBoxServiceName";
             this.textBoxServiceName.Size = new System.Drawing.Size(484, 20);
             this.textBoxServiceName.TabIndex = 4;
@@ -127,7 +129,7 @@
             // textBoxNamespace
             // 
             this.textBoxNamespace.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServiceProjectCreator.Properties.Settings.Default, "Namespace", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxNamespace.Location = new System.Drawing.Point(157, 93);
+            this.textBoxNamespace.Location = new System.Drawing.Point(144, 74);
             this.textBoxNamespace.Name = "textBoxNamespace";
             this.textBoxNamespace.Size = new System.Drawing.Size(484, 20);
             this.textBoxNamespace.TabIndex = 3;
@@ -136,7 +138,7 @@
             // textBoxServiceDescription
             // 
             this.textBoxServiceDescription.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServiceProjectCreator.Properties.Settings.Default, "ServiceDescription", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxServiceDescription.Location = new System.Drawing.Point(157, 174);
+            this.textBoxServiceDescription.Location = new System.Drawing.Point(144, 155);
             this.textBoxServiceDescription.Name = "textBoxServiceDescription";
             this.textBoxServiceDescription.Size = new System.Drawing.Size(484, 20);
             this.textBoxServiceDescription.TabIndex = 6;
@@ -145,7 +147,7 @@
             // textBoxExecutableName
             // 
             this.textBoxExecutableName.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServiceProjectCreator.Properties.Settings.Default, "ExecutableName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxExecutableName.Location = new System.Drawing.Point(157, 70);
+            this.textBoxExecutableName.Location = new System.Drawing.Point(144, 51);
             this.textBoxExecutableName.Name = "textBoxExecutableName";
             this.textBoxExecutableName.Size = new System.Drawing.Size(484, 20);
             this.textBoxExecutableName.TabIndex = 2;
@@ -156,7 +158,7 @@
             this.textBoxTargetDirectory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.textBoxTargetDirectory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
             this.textBoxTargetDirectory.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::ServiceProjectCreator.Properties.Settings.Default, "TargetDirectory", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBoxTargetDirectory.Location = new System.Drawing.Point(157, 44);
+            this.textBoxTargetDirectory.Location = new System.Drawing.Point(144, 25);
             this.textBoxTargetDirectory.Name = "textBoxTargetDirectory";
             this.textBoxTargetDirectory.Size = new System.Drawing.Size(484, 20);
             this.textBoxTargetDirectory.TabIndex = 1;
@@ -165,17 +167,38 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 228);
+            this.label7.Location = new System.Drawing.Point(5, 262);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(127, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "(c) Ashutosh Bhawasinka";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(21, 200);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(322, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "NOTE: Please don\'t use space for Namespace and Service Name.";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(55, 224);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(425, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "There is no data validation for the fields as it\'s expected to be used by technic" +
+    "al people :)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 259);
+            this.ClientSize = new System.Drawing.Size(665, 289);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.textBoxServiceDisplayName);
@@ -190,6 +213,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Service Project Creator v1 Beta";
             this.ResumeLayout(false);
@@ -213,6 +238,8 @@
         private System.Windows.Forms.TextBox textBoxServiceDescription;
         private System.Windows.Forms.Button buttonGenerate;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
 
